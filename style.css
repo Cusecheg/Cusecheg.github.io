@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+    --Linear-gradient: hsl(278, 94%, 30%);
+    --Red-inputs: hsl(0, 100%, 66%);
+
+}
+
+/* main section */
+main{
+    font-family: 'Space Grotesk', sans-serif;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: var(--Very-dark-violet);
+}
+/* cards section*/
+#bg-img{
+    color: var(--White);
+    background-image: url(images/bg-main-desktop.png);
+    min-height: 100vh;
+}
+#card-logo{
+    position: absolute;
+    top: 12%;
+    left: 12%;
+
+}
+#card-front{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#name{
+    text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;
+    top: 35%;
+    left: 12%;
+}
+#date{
+    font-size: 14px;
+    position: absolute;
+    top: 35.5%;
+    left: 34%;
+
+}
+#numberCard{
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    font-size: 33px;
+}
+#card-back{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+#code{
+    font-size: 14px;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+/* Completed state start */
+#approved{
+    font-size: 20px;   
+    display: none;
+    grid-template-rows: 15% 15% 15%;
+    text-align: center;
+    place-items: center;
+    place-content: center;
+}
+#approved p{
+    color: var(--Dark-grayish-violet);
+}
+#approved h2{
+    letter-spacing: 0.3rem;
+    font-size: 25px;
+    font-weight:lighter;
+}
+#approved button{
+    width: 400px;
+}
+
+/* form section */
+#bg-white{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exp {
+    float: left;
+    width: 45%;
+}
+
+#content div{
+    margin-bottom: 60px;
+}
+
+#button-submit{
+    text-align: center;
+}
+input{
+    font-size: 18px;
+    color: var(--Very-dark-violet);
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+}
+
+button{
+    font-size: 14px;
+    color: white;
+    background-color: var(--Very-dark-violet);
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--Linear-gradient);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:var(--Dark-grayish-violet);
+}
+/* attributes of frontend mentor  */
+.attribution {font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.red-error-text{
+    color: red;
+}
+
